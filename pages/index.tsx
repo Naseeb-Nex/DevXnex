@@ -10,9 +10,9 @@ interface indexProps { }
 
 interface Ireply {
   id: number;
-  name: string;
-  userName: string;
-  reply: string;
+  img: string;
+  title: string;
+  desc: string;
 }
 
 const locomotiveScroll =
@@ -31,7 +31,7 @@ const fetcher = (url: any) => fetch(url).then((res) => res.json());
 const index: React.FC<indexProps> = ({ }) => {
   const [speakerState, setSpeakerState] = useState("muted");
   const [isToggleOpen, setIsToggleOpen] = useState<boolean>(false);
-  const { data: reviews, error } = useSwr("/api/tweets", fetcher);
+  const { data: features, error } = useSwr("/api/features", fetcher);
 
   if (error) console.log(error);
 
@@ -327,8 +327,56 @@ const index: React.FC<indexProps> = ({ }) => {
 
             </div>
           </section>
-
-
+          <section
+            data-scroll
+            data-scroll-offset="35%"
+            data-scroll-repeat={true}
+            data-scroll-class="section-reviews__bg"
+            className="section-reviews"
+          >
+            <div className="section-reviews__top">
+              <h1 className="heading-1">
+                <span>Feature Fusions</span>
+              </h1>
+              <p className="paragraph paragraph__sub">
+                Igniting Possibilities, Blending Innovations, and Elevating Experiences
+              </p>
+            </div>
+            <div className="section-reviews__bottom">
+              <div className="section-reviews__bottom-wrapper feature-card__anim1">
+                {features?.data.map((feature: Ireply) => (
+                  <div key={feature.id} className="feature-card">
+                    <div className="feature-card__top">
+                      <div className="feature-card__top">
+                        <div className="feature-card__top--left">
+                          <img src={feature.img}></img>
+                          <h3 className="feature-card__h3">{feature.title}</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="feature-card__bottom">
+                      <h2 className="feature-card__h2">{feature.desc}</h2>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              <div className="section-reviews__bottom-wrapper feature-card__anim2">
+                {features?.data.sort().map((feature: Ireply) => (
+                  <div key={feature.id} className="feature-card">
+                    <div className="feature-card__top">
+                      <div className="feature-card__top--left">
+                        <img src={feature.img}></img>
+                        <h3 className="feature-card__h3">{feature.title}</h3>
+                      </div>
+                    </div>
+                    <div className="feature-card__bottom">
+                      <h2 className="feature-card__h2">{feature.desc}</h2>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
           <section id="sectionProjects" className="section-projects">
             <h1 className="heading-1">
               <span>Project Spotlight</span>
@@ -514,60 +562,6 @@ const index: React.FC<indexProps> = ({ }) => {
                 </a>
                 <div className="project-card__socials">
                 </div>
-              </div>
-            </div>
-          </section>
-          <section
-            data-scroll
-            data-scroll-offset="35%"
-            data-scroll-repeat={true}
-            data-scroll-class="section-reviews__bg"
-            className="section-reviews"
-          >
-            <div className="section-reviews__top">
-              <h1 className="heading-1">
-                <span>Mmmm, a little brag </span> <small>😊</small>
-              </h1>
-              <p className="paragraph paragraph__sub">
-                What people are saying about my last portfolio
-              </p>
-            </div>
-            <div className="section-reviews__bottom">
-              <div className="section-reviews__bottom-wrapper review-card__anim1">
-                {reviews?.data.map((review: Ireply) => (
-                  <div key={review.id} className="review-card">
-                    <div className="review-card__top">
-                      <div className="review-card__top--left">
-                        <p className="review-card__p">{review.name}</p>
-                        <h3 className="review-card__h3">{review.userName}</h3>
-                      </div>
-                      <div className="review-card__top--right">
-                        <img src="svg/twitter.svg" alt="twitter icon" />
-                      </div>
-                    </div>
-                    <div className="review-card__bottom">
-                      <h2 className="review-card__h2">{review.reply}</h2>
-                    </div>
-                  </div>
-                ))}
-              </div>
-              <div className="section-reviews__bottom-wrapper review-card__anim2">
-                {reviews?.data.sort().map((review: Ireply) => (
-                  <div key={review.id} className="review-card">
-                    <div className="review-card__top">
-                      <div className="review-card__top--left">
-                        <p className="review-card__p">{review.name}</p>
-                        <h3 className="review-card__h3">{review.userName}</h3>
-                      </div>
-                      <div className="review-card__top--right">
-                        <img src="svg/twitter.svg" alt="twitter icon" />
-                      </div>
-                    </div>
-                    <div className="review-card__bottom">
-                      <h2 className="review-card__h2">{review.reply}</h2>
-                    </div>
-                  </div>
-                ))}
               </div>
             </div>
           </section>

@@ -612,7 +612,7 @@
       }
     }
     &__description {
-      font-family: 'Nunito', sans-serif;
+      font-family: "Nunito", sans-serif;
       text-align: left;
       font-size: 1.4rem;
       color: #fff;
@@ -624,15 +624,17 @@
 // section=reviews
 
 .section-reviews__bg {
-  background-color: #050810;
+  background-color: #0e011c;
 }
 
 .section-reviews {
   grid-column: 1/15;
   display: grid;
-  grid-template-columns: 1fr repeat(12, minmax(min-content, 10rem)) 1fr;
+  // grid-template-columns: 1fr repeat(12, minmax(min-content, 10rem)) 1fr;
+  grid-template-columns: 1fr repeat(8, minmax(min-content, 10rem)) 1fr;
   padding: 8rem 0;
   transition: all 0.3s ease-in-out;
+  margin-top: 3rem;
   &__top {
     grid-column: 2/14;
     padding: 0 6rem;
@@ -657,24 +659,28 @@
     &-wrapper {
       @include centerContent;
       width: max-content;
-      .review-card {
+      .feature-card {
         background: #171e2f;
         border-radius: 2rem;
         padding: 3rem;
         margin: 1.5rem;
+        width: 20em;
+        height: 24em;
+        justify-content: center;
+        align-items: center;
         &__top {
           @include centerContent;
           margin-bottom: 3rem;
-          // &--left {
-          // }
-          // &--right {
-          //   img {
-          //   }
-          // }
+
+          &--left img{
+            width: 50px;
+            height: 50px;
+          }
         }
 
-        // &__bottom {
-        // }
+        &__bottom {
+          max-width: 20em;
+        }
 
         &__p {
           font-size: 0.8rem;
@@ -685,18 +691,18 @@
         }
 
         &__h3 {
-          font-size: 1.9rem;
+          font-size: 2rem;
           line-height: 81.4%;
           letter-spacing: -0.01em;
-          color: #585e6e;
+          color: var(--color-white);
           margin-top: 1.5rem;
           font-weight: 100;
         }
 
         &__h2 {
-          font-size: 2rem;
+          font-size: 1.9rem;
           line-height: 130.4%;
-          color: var(--color-white);
+          color: #cce5e6;
           font-weight: 100;
         }
       }
@@ -704,16 +710,16 @@
   }
 }
 
-.review-card__anim1 {
-  animation: reviewCardAnim1 25s ease-in-out infinite alternate;
+.feature-card__anim1 {
+  animation: featureCardAnim1 25s ease-in-out infinite alternate;
 
   &:hover {
     animation-play-state: paused;
   }
 }
 
-.review-card__anim2 {
-  animation: reviewCardAnim2 25s ease-in-out infinite alternate;
+.feature-card__anim2 {
+  animation: featureCardAnim2 25s ease-in-out infinite alternate;
   &:hover {
     animation-play-state: paused;
   }

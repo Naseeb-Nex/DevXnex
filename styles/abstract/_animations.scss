@@ -25,21 +25,21 @@
   }
 }
 
-@keyframes reviewCardAnim1 {
+@keyframes featureCardAnim1 {
   from {
-    transform: translateX(-52%);
+    transform: translateX(-63%);
   }
   to {
     transform: translateX(0%);
   }
 }
 
-@keyframes reviewCardAnim2 {
+@keyframes featureCardAnim2 {
   from {
     transform: translateX(0%);
   }
   to {
-    transform: translateX(-52%);
+    transform: translateX(-63%);
   }
 }
 
