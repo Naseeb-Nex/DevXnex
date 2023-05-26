@@ -334,7 +334,7 @@ const index: React.FC<indexProps> = ({ }) => {
               <span>Project Spotlight</span>
             </h1>
             <p className="paragraph">
-            Spotlight on our Groundbreaking Projects
+              Spotlight on our Groundbreaking Projects
             </p>
 
             <div className="project-card">
@@ -347,8 +347,8 @@ const index: React.FC<indexProps> = ({ }) => {
                 className="project-card__middle"
                 data-displacement="webp/myDistorsionImage.webp"
               >
-                <img src="webp/bbright.webp" alt="alexxandria model" />
-                <img src="webp/imaweb2.webp" alt="alexxandria logo" />
+                <img src="webp/bbright.webp" alt="ima website model" />
+                <img src="webp/imaweb2.webp" alt="ima logo" />
               </div>
               <div className="project-card__right" >
                 <h2
@@ -397,8 +397,8 @@ const index: React.FC<indexProps> = ({ }) => {
                 className="project-card__middle"
                 data-displacement="webp/myDistorsionImage.webp"
               >
-                <img src="webp/smarthut.webp" alt="safarika" />
-                <img src="webp/smarthut-2.webp" alt="safarika logo" />
+                <img src="webp/smarthut.webp" alt="SmartHut" />
+                <img src="webp/smarthut-2.webp" alt="SmartHut logo" />
               </div>
               <div className="project-card__right">
                 <h2
@@ -430,15 +430,15 @@ const index: React.FC<indexProps> = ({ }) => {
             <div className="project-card">
               <div className="project-card__left">
                 <h4 className="heading-4">
-                Technician management System
+                  Technician management System
                 </h4>
               </div>
               <div
                 className="project-card__middle"
                 data-displacement="webp/myDistorsionImage.webp"
               >
-                <img src="webp/ima-app.webp" alt="heatrow" />
-                <img src="webp/imaapp-2.webp" alt="heatrow logo" />
+                <img src="webp/ima-app.webp" alt="Ima App" />
+                <img src="webp/imaapp-2.webp" alt="ima App logo" />
               </div>
               <div className="project-card__right">
                 <h2
@@ -487,8 +487,8 @@ const index: React.FC<indexProps> = ({ }) => {
                 className="project-card__middle"
                 data-displacement="webp/myDistorsionImage.webp"
               >
-                <img src="webp/vconnect.webp" alt="adeola model" />
-                <img src="webp/vconnect-2.webp" alt="adeola logo" />
+                <img src="webp/vconnect.webp" alt="Vconnect model" />
+                <img src="webp/vconnect-2.webp" alt="Vconnect logo" />
               </div>
               <div className="project-card__right">
                 <h2
@@ -502,7 +502,7 @@ const index: React.FC<indexProps> = ({ }) => {
                   VConnect
                 </h2>
                 <p className="project-card__description">
-                Experience seamless social networking with the user-centric application developed by Devxnex. Connect, engage, and explore with features such as sign-up, profile creation, user search, friend management, and mutual friends discovery. Elevate your social interactions with Devxnex's innovative platform.
+                  Experience seamless social networking with the user-centric application developed by Devxnex. Connect, engage, and explore with features such as sign-up, profile creation, user search, friend management, and mutual friends discovery. Elevate your social interactions with Devxnex's innovative platform.
                 </p>
                 <a
                   rel="noopener"
@@ -510,7 +510,7 @@ const index: React.FC<indexProps> = ({ }) => {
                   href="https://github.com/Naseeb-Nex/V-Connect"
                   className="project-card__link"
                 >
-                  VIEW SOURCE CODE
+                  Learn More
                 </a>
                 <div className="project-card__socials">
                 </div>
