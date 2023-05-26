@@ -377,6 +377,53 @@ const index: React.FC<indexProps> = ({ }) => {
               </div>
             </div>
           </section>
+          <section className="section-services">
+            <h1 className="heading-1">
+              <span>Services We Offer</span>
+            </h1>
+            <div className="services_cards">
+              <div className="nft">
+                <div className='main'>
+                  <img className='tokenImage' src="webp/mobileapp.webp" alt="mobile app" />
+                  <h2 className="heading-2">Mobile App Development</h2>
+                  <div className="description">We create high-quality mobile apps for iOS and Android, tailored to your business needs. From design to deployment, our expert team ensures seamless integration, rigorous testing, and ongoing support. Elevate your brand and engage users with our native or cross-platform solutions.</div>
+                  <button className="swo-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> Get a Free Consultation
+                  </button>
+                </div>
+              </div>
+              <div className="nft">
+                <div className='main'>
+                  <img className='tokenImage' src="webp/website.webp" alt="mobile app" />
+                  <h2 className="heading-2">Web<br/>Development</h2>
+                  <div className="description">Our expert team creates dynamic, responsive websites using cutting-edge technologies. From custom web applications to e-commerce platforms, we deliver seamless user experiences with optimized performance and robust security. Maximize your online presence with our professional web development services.</div>
+                  <button className="swo-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> Launch Website
+                  </button>
+                </div>
+              </div>
+              <div className="nft">
+                <div className='main'>
+                  <img className='tokenImage' src="webp/iot-image.webp" alt="mobile app" />
+                  <h2 className="heading-2">IOT Development</h2>
+                  <div className="description">Our expert team designs and implements smart solutions that connect devices, collect data, and enable intelligent automation. From IoT consulting to prototyping and deployment, we offer end-to-end IoT solutions tailored to your industry needs. Unlock new opportunities, improve operational efficiency, and gain valuable insights with our cutting-edge IoT development.</div>
+                  <button className="swo-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> Get Started
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </section>
           <section id="sectionProjects" className="section-projects">
             <h1 className="heading-1">
               <span>Project Spotlight</span>
