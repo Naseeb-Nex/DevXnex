@@ -270,34 +270,17 @@ const index: React.FC<indexProps> = ({ }) => {
               </div>
             </div>
             <div className="header__footer--right">
-              <a
-                href="https://github.com/Naseeb-Nex"
-                rel="noopener"
-                target="_blank"
-              >
-                👾 GH
+              <a href="https://github.com/Naseeb-Nex" rel="noopener" target="_blank">
+                <img src="svg/github1.svg" alt="GitHub" />
               </a>
-              <a
-                href="https://twitter.com/DevXnex"
-                rel="noopener"
-                target="_blank"
-              >
-                🐦 TW
+              <a href="https://twitter.com/DevXnex" rel="noopener" target="_blank">
+                <img src="svg/twitter1.svg" alt="Twitter" />
               </a>
-              <a
-                href="https://www.linkedin.com/in/muhammed-naseeb-647176218/"
-                rel="noopener"
-                target="_blank"
-              >
-                💼 LD
+              <a href="https://www.linkedin.com/in/muhammed-naseeb-647176218/" rel="noopener" target="_blank">
+                <img src="svg/linkedin.svg" alt="LinkedIn" />
               </a>
-              <a
-                href="https://www.instagram.com/devxnex"
-                rel="noopener"
-                target="_blank"
-              >
-                {" "}
-                📸 IN
+              <a href="https://www.instagram.com/devxnex" rel="noopener" target="_blank">
+                <img src="svg/instagram.svg" alt="Instagram" />
               </a>
             </div>
           </div>
@@ -398,7 +381,7 @@ const index: React.FC<indexProps> = ({ }) => {
               <div className="nft">
                 <div className='main'>
                   <img className='tokenImage' src="webp/website.webp" alt="mobile app" />
-                  <h2 className="heading-2">Web<br/>Development</h2>
+                  <h2 className="heading-2">Web<br />Development</h2>
                   <div className="description">Our expert team creates dynamic, responsive websites using cutting-edge technologies. From custom web applications to e-commerce platforms, we deliver seamless user experiences with optimized performance and robust security. Maximize your online presence with our professional web development services.</div>
                   <button className="swo-btn">
                     <span></span>
@@ -613,24 +596,66 @@ const index: React.FC<indexProps> = ({ }) => {
             </div>
           </section>
           <section className="section-contact">
-            <h1 className="heading-1">
-              <span>Sold Yet? </span> <small>🤙</small>
-            </h1>
-            <h2 className="section-contact__h2">
-              Thanks for stopping by, I’m currently looking to join a new team
-              of creative designers and developers. If you think we might be a
-              good fit for one another, give me a
-              <a href="tel:+2349066383763"> call 🇳🇬 &nbsp;</a>
-              or send me an
-              <a
-                href="mailto:adeolaonigegeara@gmail.com"
-                rel="noopener"
-                target="_blank"
-              >
-                &nbsp; email 📧
-              </a>
-              .
-            </h2>
+            <div className="contact-form">
+              <div className="screen">
+                <div className="screen-header">
+                  <div className="screen-header-left">
+                    <div className="screen-header-button close"></div>
+                    <div className="screen-header-button maximize"></div>
+                    <div className="screen-header-button minimize"></div>
+                  </div>
+                  <div className="screen-header-right">
+                    <div className="screen-header-ellipsis"></div>
+                    <div className="screen-header-ellipsis"></div>
+                    <div className="screen-header-ellipsis"></div>
+                  </div>
+                </div>
+                <div className="screen-body">
+                  <div className="screen-body-item left">
+                    <div className="app-title">
+                      <h1 className="heading-1">
+                        <span>Contact Us </span>
+                      </h1>
+                    </div>
+                    <div className="app-contact">Our team would love to hear from you</div>
+                  </div>
+                  <div className="screen-body-item">
+                    <div className="app-form">
+                      <div className="app-form-group">
+                        <label className="inputfieldlable">Full Name</label>
+                        <input className="app-form-control" />
+                      </div>
+                      <div className="app-form-group">
+                        <label className="inputfieldlable">Email</label>
+                        <input className="app-form-control" />
+                      </div>
+                      <div className="app-form-group">
+                        <label className="inputfieldlable">Contact No</label>
+                        <input className="app-form-control" />
+                      </div>
+                      <div className="app-form-group message">
+                        <label className="inputfieldlable">Your Message</label>
+                        <textarea className="app-form-control" rows={4}></textarea>
+                      </div>
+                      <div className="app-form-group buttons">
+                        <button className="sendbtn">
+                          <img className="whatsapp" src="svg/whatsapp.svg" alt="whatsapp" />
+                          Message Us
+                          <div className="btnarrow">›</div>
+                        </button>
+                        <button className="sendbtn">
+                          <img className="whatsapp" src="svg/gmail.svg" alt="Gmail" />
+                          Email Us
+                          <div className="btnarrow">›</div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
           </section>
           <section className="section-socials">
             <h1 className="heading-1">
@@ -638,33 +663,21 @@ const index: React.FC<indexProps> = ({ }) => {
             </h1>
             <p className="paragraph">Connect with me online</p>
             <div className="section-socials--links">
-              <a
-                href="https://github.com/adeolaadeoti"
-                rel="noopener"
-                target="_blank"
-              >
-                👾 GitHub
+              <a href="https://github.com/Naseeb-Nex" rel="noopener" target="_blank">
+                <img className="social--icons" src="svg/github1.svg" alt="GitHub" />
+                GITHUB
               </a>
-              <a
-                href="https://twitter.com/adeolajs"
-                rel="noopener"
-                target="_blank"
-              >
-                🐦 Twitter
+              <a href="https://twitter.com/DevXnex" rel="noopener" target="_blank">
+                <img className="social--icons" src="svg/twitter1.svg" alt="Twitter" />
+                TWITTER
               </a>
-              <a
-                href="https://www.linkedin.com/in/adeoladev"
-                rel="noopener"
-                target="_blank"
-              >
-                💼 LinkedIn
+              <a href="https://www.linkedin.com/in/muhammed-naseeb-647176218/" rel="noopener" target="_blank">
+                <img className="social--icons" src="svg/linkedin.svg" alt="LinkedIn" />
+                LINKEDIN
               </a>
-              <a
-                href="https://www.instagram.com/adeolaadeoti_"
-                rel="noopener"
-                target="_blank"
-              >
-                📸 Instagram
+              <a href="https://www.instagram.com/devxnex" rel="noopener" target="_blank">
+                <img className="social--icons" src="svg/instagram.svg" alt="Instagram" />
+                INSTAGRAM
               </a>
             </div>
           </section>
