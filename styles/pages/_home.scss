@@ -1293,7 +1293,7 @@
       --color-outline: #9b59ff;
       --color-shadow: #00000080;
     }
-    
+
     .btn-content {
       display: flex;
       align-items: center;
@@ -1308,7 +1308,7 @@
       border-radius: 6.25rem; /* converted from 100px */
       box-shadow: 0 0 0.0125rem 0 var(--color-background); /* converted from 0 0 0.2em 0 var(--color-background) */
     }
-    
+
     .btn-content:hover,
     .btn-content:focus {
       transition: 0.5s;
@@ -1318,65 +1318,65 @@
       outline-offset: 0.025rem; /* converted from 0.2em */
       box-shadow: 0 0 0.025rem 0 var(--color-background); /* converted from 0 0 0.4em 0 var(--color-background) */
     }
-    
+
     .btn-content .icon-arrow {
       transition: 0.5s;
       margin-right: 0;
       transform: scale(0.6);
     }
-    
+
     .btn-content:hover .icon-arrow {
       transition: 0.5s;
       margin-right: 0.625rem; /* converted from 25px */
     }
-    
+
     .icon-arrow {
       width: 1.25rem; /* converted from 20px */
       margin-left: 0.9375rem; /* converted from 15px */
       position: relative;
       top: 6%; /* remains the same as it's not a size */
     }
-    
+
     /* SVG */
     #arrow-icon-one {
       transition: 0.4s;
       transform: translateX(-60%);
     }
-    
+
     #arrow-icon-two {
       transition: 0.5s;
       transform: translateX(-30%);
     }
-    
+
     .btn-content:hover #arrow-icon-three {
       animation: color_anim 1s infinite 0.2s;
     }
-    
+
     .btn-content:hover #arrow-icon-one {
       transform: translateX(0%);
       animation: color_anim 1s infinite 0.6s;
     }
-    
+
     .btn-content:hover #arrow-icon-two {
       transform: translateX(0%);
       animation: color_anim 1s infinite 0.4s;
     }
-    
+
     /* SVG animations */
     @keyframes color_anim {
       0% {
         fill: white;
       }
-    
+
       50% {
         fill: var(--color-background);
       }
-    
+
       100% {
         fill: white;
       }
     }
-    
+
     /* Button animations */
     @-webkit-keyframes btn-content {
       0% {
@@ -1384,14 +1384,13 @@
         outline-offset: 0;
       }
     }
-    
+
     @keyframes btn-content {
       0% {
         outline: 0.025rem solid var(--color-background); /* converted from 0.2em */
         outline-offset: 0;
       }
     }
-    
   }
   &__right {
     @include centerContent;
