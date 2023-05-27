@@ -33,6 +33,12 @@ const index: React.FC<indexProps> = ({ }) => {
   const [isToggleOpen, setIsToggleOpen] = useState<boolean>(false);
   const { data: features, error } = useSwr("/api/features", fetcher);
 
+  // Form
+  const [fullName, setFullName] = useState('');
+  const [email, setEmail] = useState('');
+  const [contactNo, setContactNo] = useState('');
+  const [message, setMessage] = useState('');
+
   if (error) console.log(error);
 
   const refScroll = React.useRef(null);
@@ -104,6 +110,33 @@ const index: React.FC<indexProps> = ({ }) => {
     } else if (isToggleOpen === true) {
       setIsToggleOpen(false);
     }
+  }
+
+  function handleWhatsAppButtonClick() {
+
+    // Create the WhatsApp link
+    const phoneNumber = '918137948323';
+    const encodedMessage = encodeURIComponent(
+      `Full Name: ${fullName}\nEmail: ${email}\nContact No: ${contactNo}\nMessage: ${message}`
+    );
+    const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+
+    // Open WhatsApp link in a new window
+    window.open(whatsappLink, "_blank");
+  }
+
+  function handleEmailButtonClick() {
+
+    // Create the Email link
+    const email = 'muhammednaseeb02@gmail.com';
+    const subject = 'Contact Form Submission';
+    const encodedMessage = encodeURIComponent(
+      `Full Name: ${fullName}\nEmail: ${email}\nContact No: ${contactNo}\nMessage: ${message}`
+    );
+    const emaillink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodedMessage}`;
+
+    // Open Email link in a new window
+    window.open(emaillink, "_blank");
   }
 
   return (
@@ -191,7 +224,7 @@ const index: React.FC<indexProps> = ({ }) => {
                 <div className="header__hero__wrapper--heading">
                   <span>turning ideas into </span> <br />
                   <span>real life </span>
-                  <span className="header__hero__wrapper--heading-gradient">
+                  <span className=" ">
                     products{" "}
                   </span>
                   <br />
@@ -623,34 +656,75 @@ const index: React.FC<indexProps> = ({ }) => {
                     <div className="app-form">
                       <div className="app-form-group">
                         <label className="inputfieldlable">Full Name</label>
-                        <input className="app-form-control" />
+                        <input
+                          className="app-form-control"
+                          value={fullName}
+                          onChange={(e) => setFullName(e.target.value)}
+                        />
                       </div>
                       <div className="app-form-group">
                         <label className="inputfieldlable">Email</label>
-                        <input className="app-form-control" />
+                        <input
+                          className="app-form-control"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                        />
                       </div>
                       <div className="app-form-group">
                         <label className="inputfieldlable">Contact No</label>
-                        <input className="app-form-control" />
+                        <input
+                          className="app-form-control"
+                          value={contactNo}
+                          onChange={(e) => setContactNo(e.target.value)}
+                        />
                       </div>
                       <div className="app-form-group message">
                         <label className="inputfieldlable">Your Message</label>
-                        <textarea className="app-form-control" rows={4}></textarea>
-                      </div>
-                      <div className="app-form-group buttons">
-                        <button className="sendbtn">
-                          <img className="whatsapp" src="svg/whatsapp.svg" alt="whatsapp" />
-                          Message Us
-                          <div className="btnarrow">›</div>
-                        </button>
-                        <button className="sendbtn">
-                          <img className="whatsapp" src="svg/gmail.svg" alt="Gmail" />
-                          Email Us
-                          <div className="btnarrow">›</div>
-                        </button>
+                        <textarea
+                          className="app-form-control"
+                          rows={4}
+                          value={message}
+                          onChange={(e) => setMessage(e.target.value)}
+                        ></textarea>
                       </div>
                     </div>
+                    <div className="app-form-group buttons">
+                      <button className="sendbtn" onClick={handleWhatsAppButtonClick}>
+                        <img className="whatsapp" src="svg/whatsapp.svg" alt="whatsapp" />
+                        Message Us
+                        <div className="btnarrow">›</div>
+                      </button>
+                      <button className="sendbtn" onClick={handleEmailButtonClick}>
+                        <img className="whatsapp" src="svg/gmail.svg" alt="Gmail" />
+                        Email Us
+                        <div className="btnarrow">›</div>
+                      </button>
+                    </div>
                   </div>
+                </div>
+              </div>
+              <div className="msgor">Or</div>
+              <div className="schedule-meeting">
+                <div className="schedule-meeting__left">
+                  <h1 className="heading-2" style={{ marginBottom: "0.8rem" }}>Schedule a meeting</h1>
+                  <div className="paragraph">Embark on a seamless journey of connection and collaboration with our client-centric platform. Experience the ease of scheduling meetings at your convenience, fostering meaningful interactions that drive success. Unleash the power of connection </div>
+                  <div className="btn-conteiner">
+  <a className="btn-content" href="#">
+    <span className="btn-title">Make Your Move</span>
+    <span className="icon-arrow">
+<svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <path id="arrow-icon-one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+          <path id="arrow-icon-two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+          <path id="arrow-icon-three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+        </g>
+      </svg>
+    </span> 
+  </a>
+</div>
+                </div>
+                <div className="schedule-meeting__right">
+                  <img className="meeting-img" src="svg/meeting.svg"></img>
                 </div>
               </div>
 
@@ -661,7 +735,7 @@ const index: React.FC<indexProps> = ({ }) => {
             <h1 className="heading-1">
               <span>Dont be a stranger!</span> <small>👋</small>
             </h1>
-            <p className="paragraph">Connect with me online</p>
+            <p className="paragraph">Connect with us online</p>
             <div className="section-socials--links">
               <a href="https://github.com/Naseeb-Nex" rel="noopener" target="_blank">
                 <img className="social--icons" src="svg/github1.svg" alt="GitHub" />
