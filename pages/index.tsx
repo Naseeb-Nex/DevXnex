@@ -709,7 +709,7 @@ const index: React.FC<indexProps> = ({ }) => {
                   <h1 className="heading-2" style={{ marginBottom: "0.8rem" }}>Schedule a meeting</h1>
                   <div className="paragraph">Embark on a seamless journey of connection and collaboration with our client-centric platform. Experience the ease of scheduling meetings at your convenience, fostering meaningful interactions that drive success. Unleash the power of connection </div>
                   <div className="btn-conteiner">
-                    <a className="btn-content" href="#">
+                    <a className="btn-content" href="https://calendly.com/muhammednaseeb/devxnex-lets-build-it">
                       <span className="btn-title">Make Your Move</span>
                       <span className="icon-arrow">
                         <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
@@ -779,6 +779,12 @@ const index: React.FC<indexProps> = ({ }) => {
           </div>
         </footer>
       </div>
+    // TODO : Add Linking between section using #
+    // TODO : Refine Code and remove ADD
+    // TODO : check all links
+    // TODO : remove all unwanted images
+    // TODO : Host code preparation
+
     </>
   );
 };
