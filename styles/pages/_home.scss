@@ -702,6 +702,13 @@
       }
       @media only screen and (max-width: 30em) {
         width: 30rem;
+        height: 35rem;
+        border-radius: 3rem;
+      }
+
+      @media only screen and (max-width: 22em) {
+        width: 22rem;
+        height: 30rem;
         border-radius: 3rem;
       }
 
@@ -1074,6 +1081,11 @@
   margin-top: 1rem;
   display: flex;
   @include centerContent;
+
+  @media only screen and (max-width: 441px) {
+    flex-direction: column;
+    width: auto;
+  }
 }
 
 .inputfieldlable {
@@ -1161,6 +1173,11 @@
   position: relative;
   cursor: pointer;
   transition-duration: 0.2s;
+
+  @media only screen and (max-width: 441px) {
+    width: 20rem;
+    margin-top: 2rem;
+  }
 }
 
 .whatsapp {
@@ -1280,6 +1297,10 @@
 
 .schedule-meeting {
   display: flex;
+
+  @media only screen and (max-width: 545px) {
+    flex-direction: column-reverse;
+  }
   &__left {
     @include centerContent;
     flex: 1;
@@ -1300,10 +1321,10 @@
     .btn-content {
       display: flex;
       align-items: center;
-      padding: 0.3125rem 4rem; /* converted from 5px 30px */
+      padding: 0.2rem 4rem; /* converted from 5px 30px */
       text-decoration: none;
       font-family: $font-secondary;
-      font-weight: 600;
+      font-weight: 700;
       font-size: 1.875rem; /* converted from 30px */
       color: var(--color-text);
       background: var(--color-background);
@@ -1399,6 +1420,10 @@
     @include centerContent;
     justify-content: right;
     flex: 1;
+    @media only screen and (max-width: 545px) {
+      justify-content: center;
+    }
+
     .meeting-img {
       max-width: 70%;
       max-height: inherit;

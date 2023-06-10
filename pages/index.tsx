@@ -150,17 +150,18 @@ const index: React.FC<indexProps> = ({ }) => {
             name="apple-mobile-web-app-status-bar-style"
             content="#10101A"
           />
-          <title>Adeola Adeoti 🚀 &mdash; Frontend Devloper</title>
+          <title>DevXnex</title>
           <meta
             name="description"
-            content="I'm a self-taught Front End Developer and turning ideas into real life products is my calling."
+            content="Software development startup that turning ideas into
+            real life products"
           />
           <meta property="og:type" content="website" />
           <meta
             property="og:title"
-            content="Adeola Adeoti 🚀 &mdash; Frontend Devloper"
+            content="DevXnex"
           />
-          <meta property="og:url" content="https://adeolaadeoti.xyz/" />
+          {/* <meta property="og:url" content="https://adeolaadeoti.xyz/" /> */}
           <meta property="og:image" content="webp/preview-image.png" />
           <meta
             property="og:description"
@@ -224,7 +225,7 @@ const index: React.FC<indexProps> = ({ }) => {
                 <div className="header__hero__wrapper--heading">
                   <span>turning ideas into </span> <br />
                   <span>real life </span>
-                  <span className=" ">
+                  <span className="header__hero__wrapper--heading-gradient">
                     products{" "}
                   </span>
                   <br />
