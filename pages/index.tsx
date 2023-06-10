@@ -402,7 +402,7 @@ const index: React.FC<indexProps> = ({ }) => {
                 <div className='main'>
                   <img className='tokenImage' src="webp/mobileapp.webp" alt="mobile app" />
                   <h2 className="heading-2">Mobile App Development</h2>
-                  <div className="description">We create high-quality mobile apps for iOS and Android, tailored to your business needs. From design to deployment, our expert team ensures seamless integration, rigorous testing, and ongoing support. Elevate your brand and engage users with our native or cross-platform solutions.</div>
+                  <div className="description">Our team excels in mobile development, crafting feature-rich apps using cutting-edge tech. From native to cross-platform solutions, we deliver smooth user experiences with high performance and strong security. Boost your mobile presence with our expert development services.</div>
                   <button className="swo-btn">
                     <span></span>
                     <span></span>
@@ -426,9 +426,9 @@ const index: React.FC<indexProps> = ({ }) => {
               </div>
               <div className="nft">
                 <div className='main'>
-                  <img className='tokenImage' src="webp/iot-image.webp" alt="mobile app" />
-                  <h2 className="heading-2">IOT Development</h2>
-                  <div className="description">Our expert team designs and implements smart solutions that connect devices, collect data, and enable intelligent automation. From IoT consulting to prototyping and deployment, we offer end-to-end IoT solutions tailored to your industry needs. Unlock new opportunities, improve operational efficiency, and gain valuable insights with our cutting-edge IoT development.</div>
+                  <img className='tokenImage' src="webp/software.webp" alt="mobile app" />
+                  <h2 className="heading-2">Software Development</h2>
+                  <div className="description">Our skilled team engineers innovative software solutions utilizing state-of-the-art technologies. From bespoke applications to scalable enterprise systems, we provide flawless user experiences with high performance and stringent security. Elevate your digital capabilities with our expert software development services.</div>
                   <button className="swo-btn">
                     <span></span>
                     <span></span>

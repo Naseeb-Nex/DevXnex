@@ -222,7 +222,7 @@
     }
 
     &--right {
-      width: 20rem;
+      width: 14rem;
       @include centerContent;
       img {
         width: 2rem;
@@ -394,7 +394,9 @@
   .main {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 100%;
+    height: 100%;
     padding: 1rem;
     .tokenImage {
       border-radius: 0.5rem;
@@ -960,6 +962,7 @@
   border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(15px);
+  background-color: #011522;
 }
 
 .screen:after {
