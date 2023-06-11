@@ -48,42 +48,18 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
         className="navigation-top"
       >
         <div className="navigation-top__left">
-          <h4 className="navigation-h4">DONT BE A STRANGER</h4>
-          <div className="navigation-top__left--links">
-            <a
-              href="https://github.com/adeolaadeoti"
-              rel="noopener"
-              target="_blank"
-            >
-              👾 GH
-            </a>
-            <a
-              href="https://twitter.com/adeolajs"
-              rel="noopener"
-              target="_blank"
-            >
-              🐦 TW
-            </a>
-            <a
-              href="https://www.linkedin.com/in/adeoladev"
-              rel="noopener"
-              target="_blank"
-            >
-              💼 LD
-            </a>
-            <a
-              href="https://www.instagram.com/adeolaadeoti_"
-              rel="noopener"
-              target="_blank"
-            >
-              📸 IN
-            </a>
+          <div className="navigation-top__left__nav">
+            <a>Home</a>
+            <a>About Us</a>
+            <a>Features</a>
+            <a>Services</a>
+            <a>Contact Us</a>
           </div>
         </div>
         <div className="navigation-top__right">
           <h4 className="navigation-h4">HAVE AN IDEA?</h4>
           <a
-            href="mailto:adeolaonigegeara@gmail.com"
+            href="mailto:muhammednaseeb02@gmail.com"
             target="_blank"
             rel="nofollow noopener noreferrer"
           >
@@ -100,41 +76,38 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
         }
         className="navigation-bottom"
       >
-        <h4 className="navigation-h4">FEATURED PROJECTS</h4>
+        <h4 className="navigation-h4">Transforming Businesses with Our Expertise</h4>
         <div className="navigation-bottom__projects">
           <a
             target="_blank"
             rel="noopener"
-            href="https://alexxandria.vercel.app/"
             className="navigation-bottom__projects-card"
           >
-            <img src="webp/alexxandria-nav.webp" alt="alexxandria" />
+            <img src="webp/mobileapp.webp" alt="MobileDev" />
             <h2>
-              Alexxandria
+              Mobile
               <br />
-              Forque
+              Development
             </h2>
           </a>
           <a
-            href="https://safarika-adeola.netlify.app/"
             target="_blank"
             rel="noopener"
             className="navigation-bottom__projects-card"
           >
-            <img src="webp/safarika-nav.webp" alt="safarika" />
-            <h2>Safarika</h2>
+            <img src="webp/website.webp" alt="Website" />
+            <h2>Website <br /> Development</h2>
           </a>
           <a
-            href="https://adeolaadeoti.netlify.app/"
             target="_blank"
             rel="noopener"
             className="navigation-bottom__projects-card"
           >
-            <img src="webp/adeola-1.webp" alt="adeola" />
+            <img src="webp/software.webp" alt="Software" />
             <h2>
-              AdeolaAdeoti
+              Software
               <br />
-              Version 1
+              Development
             </h2>
           </a>
         </div>

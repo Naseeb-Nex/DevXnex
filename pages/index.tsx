@@ -153,31 +153,33 @@ const index: React.FC<indexProps> = ({ }) => {
           <title>DevXnex</title>
           <meta
             name="description"
-            content="Software development startup that turning ideas into
-            real life products"
+            content="Software development startup that turning ideas into real life products"
           />
           <meta property="og:type" content="website" />
           <meta
             property="og:title"
             content="DevXnex"
           />
+          {/* TODO : ADD privew image and url */}
           {/* <meta property="og:url" content="https://adeolaadeoti.xyz/" /> */}
-          <meta property="og:image" content="webp/preview-image.png" />
+          {/* <meta property="og:image" content="webp/preview-image.png" /> */}
           <meta
             property="og:description"
-            content="I'm a self-taught Front End Developer and turning ideas into real life products is my calling."
+            content="Software development startup that turning ideas into real life products"
           />
           <meta
             name="twitter:title"
-            content="Adeola Adeoti 🚀 &mdash; Frontend Devloper"
+            content="DevXnex"
           />
           <meta
             name="twitter:description"
-            content="I'm a self-taught Front End Developer and turning ideas into real life products is my calling."
+            content="Software development startup that turning ideas into real life products"
           />
-          <meta name="twitter:image" content="webp/preview-image.png" />
+
+          {/* TODO : add previewer and URL here */}
+          {/* <meta name="twitter:image" content="webp/preview-image.png" /> */}
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:url" content="https://adeolaadeoti.xyz/" />
+          {/* <meta name="twitter:url" content="https://adeolaadeoti.xyz/" /> */}
         </Head>
         {/* Todo Audio Disabled */}
         {/* <audio loop id="audioPlayer" autoPlay style={{ display: "none" }}>
@@ -223,7 +225,7 @@ const index: React.FC<indexProps> = ({ }) => {
               <div className="header__hero__wrapper">
 
                 <div className="header__hero__wrapper--heading">
-                  <span>turning ideas into </span> <br />
+                  <span>turning ideas into </span>
                   <span>real life </span>
                   <span className="header__hero__wrapper--heading-gradient">
                     products{" "}
@@ -629,7 +631,7 @@ const index: React.FC<indexProps> = ({ }) => {
               </div>
             </div>
           </section>
-          <section className="section-contact">
+          <section className="section-contact" id="section-contact">
             <div className="contact-form">
               <div className="screen">
                 <div className="screen-header">

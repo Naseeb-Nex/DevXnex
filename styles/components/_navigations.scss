@@ -82,7 +82,7 @@
   width: 100%;
   overflow: hidden;
   height: 100vh;
-  background-color: #050810;
+  background-color: #011622;
   color: var(--color-white);
   overflow-y: scroll;
 }
@@ -110,24 +110,34 @@
     @media only screen and (max-width: 57em) {
       margin-bottom: 10rem;
     }
-    &--links {
-      width: 30rem;
-      @include centerContent;
-      margin-top: 4rem;
-      a {
-        color: var(--color-light-blue);
-        text-decoration: none;
-        font-family: $font-tertiary;
-        line-height: 92.4%;
+    
+    &__nav {
+      font-family: $font-secondary;
+        font-size: 5.5rem;
+        line-height: 100%;
         letter-spacing: -0.03em;
-        text-transform: uppercase;
-        font-size: 3rem;
-        font-weight: 100;
-        transition: all 0.3s ease-in-out;
-        &:hover {
-          color: var(--color-white);
+        color: var(--color-white);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        a {
+          &:hover {
+            background: linear-gradient(
+            -45deg,
+            var(--color-light-blue),
+            var(--color-light-purple),
+            var(--color-light-blue),
+            var(--color-light-purple)
+          );
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-size: 400% 400%;
+          animation: gradient 3s ease infinite;
+          cursor: pointer;
+          }
         }
-      }
     }
   }
   &__right {
