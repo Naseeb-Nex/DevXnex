@@ -761,7 +761,7 @@ const index: React.FC<indexProps> = ({ }) => {
         </main>
         <footer className="footer">
           <img
-            src="svg/adeola-logo-footer.svg"
+            src="svg/logo.svg"
             alt="design and devloped by adeola"
           />
           <div className="footer__socials">
@@ -782,12 +782,6 @@ const index: React.FC<indexProps> = ({ }) => {
           </div>
         </footer>
       </div>
-    // TODO : Add Linking between section using #
-    // TODO : Refine Code and remove ADD
-    // TODO : check all links
-    // TODO : remove all unwanted images
-    // TODO : Host code preparation
-
     </>
   );
 };

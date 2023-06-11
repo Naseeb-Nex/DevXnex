@@ -1441,6 +1441,10 @@
   padding: 3rem 6rem;
   border-top: 1px solid rgba(#c4c4c4, 0.25);
 
+  img {
+    max-width: 10rem;
+  }
+
   @media only screen and (max-width: 45em) {
     padding-left: 4rem;
     padding-right: 4rem;
