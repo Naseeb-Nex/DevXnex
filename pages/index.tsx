@@ -162,7 +162,7 @@ const index: React.FC<indexProps> = ({ }) => {
           />
           {/* TODO : ADD privew image and url */}
           {/* <meta property="og:url" content="https://website.xyz/" /> */}
-          {/* <meta property="og:image" content="webp/preview-image.png" /> */}
+          <meta property="og:image" content="webp/preview-image.png" />
           <meta
             property="og:description"
             content="Software development startup that turning ideas into real life products"
@@ -177,20 +177,18 @@ const index: React.FC<indexProps> = ({ }) => {
           />
 
           {/* TODO : add previewer and URL here */}
-          {/* <meta name="twitter:image" content="webp/preview-image.png" /> */}
+          <meta name="twitter:image" content="webp/preview-image.png" />
           <meta name="twitter:card" content="summary_large_image" />
           {/* <meta name="twitter:url" content="https://website.xyz/" /> */}
         </Head>
-        {/* Todo Audio Disabled */}
-        {/* <audio loop id="audioPlayer" autoPlay style={{ display: "none" }}>
+        <audio loop id="audioPlayer" autoPlay style={{ display: "none" }}>
           <source src="sound/preloader.mp3" type="audio/mp3" />
-        </audio> */}
+        </audio>
         <motion.div
           data-scroll
           data-scroll-sticky
           data-scroll-target="#menu-target"
-          // TODO : change the speed after debug
-          animate={{ top: "-100vh", transition: { ...transition, delay: 1 } }}
+          animate={{ top: "-100vh", transition: { ...transition, delay: 9 } }}
           className="preloader"
         >
           <div className="preloader__wrapper">
