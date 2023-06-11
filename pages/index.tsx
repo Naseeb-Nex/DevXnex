@@ -144,7 +144,7 @@ const index: React.FC<indexProps> = ({ }) => {
       <div id="menu-target" data-scroll-container ref={refScroll}>
         <Head>
           <link rel="icon" href="svg/favicon.svg" />
-          <link href="https://adeolaadeoti.xyz/" rel="canonical" />
+          {/* <link href="https://website.xyz/" rel="canonical" /> */}
           <meta name="theme-color" content="#10101A" />
           <meta
             name="apple-mobile-web-app-status-bar-style"
@@ -161,7 +161,7 @@ const index: React.FC<indexProps> = ({ }) => {
             content="DevXnex"
           />
           {/* TODO : ADD privew image and url */}
-          {/* <meta property="og:url" content="https://adeolaadeoti.xyz/" /> */}
+          {/* <meta property="og:url" content="https://website.xyz/" /> */}
           {/* <meta property="og:image" content="webp/preview-image.png" /> */}
           <meta
             property="og:description"
@@ -179,7 +179,7 @@ const index: React.FC<indexProps> = ({ }) => {
           {/* TODO : add previewer and URL here */}
           {/* <meta name="twitter:image" content="webp/preview-image.png" /> */}
           <meta name="twitter:card" content="summary_large_image" />
-          {/* <meta name="twitter:url" content="https://adeolaadeoti.xyz/" /> */}
+          {/* <meta name="twitter:url" content="https://website.xyz/" /> */}
         </Head>
         {/* Todo Audio Disabled */}
         {/* <audio loop id="audioPlayer" autoPlay style={{ display: "none" }}>
@@ -762,18 +762,11 @@ const index: React.FC<indexProps> = ({ }) => {
         <footer className="footer">
           <img
             src="svg/logo.svg"
-            alt="design and devloped by adeola"
+            alt="DevXnex"
           />
           <div className="footer__socials">
             <a
-              href="https://dribbble.com/shots/16100745-Adeola-Adeoti-Personal-Website"
-              target="_blank"
-              rel="noopener"
-            >
-              <img src="svg/dribble.svg" alt="dribble logo" />
-            </a>
-            <a
-              href="https://github.com/adeolaadeoti/adeolaadeoti-v2"
+              href="https://github.com/Naseeb-Nex"
               target="_blank"
               rel="noopener"
             >

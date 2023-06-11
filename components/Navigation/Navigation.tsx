@@ -43,13 +43,13 @@ export const Navigation = ({ isOpen, toggleOpen }: any) => {
             <img
               className="brand-logo__icon"
               src="svg/logo.svg"
-              alt="adeola logo icon"
+              alt="DevXnex"
             />
             <span className="brand-logo__text-wrapper">
               <img
                 className="brand-logo__text"
-                src="svg/adeola-logo-right.svg"
-                alt="adeola logo text"
+                src="svg/rdx.svg"
+                alt="DevxNex"
               />
             </span>
           </a>
