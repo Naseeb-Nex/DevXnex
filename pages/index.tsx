@@ -188,7 +188,7 @@ const index: React.FC<indexProps> = ({ }) => {
           data-scroll
           data-scroll-sticky
           data-scroll-target="#menu-target"
-          animate={{ top: "-100vh", transition: { ...transition, delay: 9 } }}
+          animate={{ top: "-100vh", transition: { ...transition, delay: 8 } }}
           className="preloader"
         >
           <div className="preloader__wrapper">
@@ -229,7 +229,8 @@ const index: React.FC<indexProps> = ({ }) => {
                     products{" "}
                   </span>
                   <br />
-                  <button className="header__hero__wrapper--glow-button" type="button">Try it Out</button>
+                  <a data-scroll-to
+                    href="#section-contact"><button className="header__hero__wrapper--glow-button" type="button">Try it Out</button></a>
                 </div>
                 <div className="header__hero__wrapper--frame">
                   <Frame radius={50} />
