@@ -197,7 +197,7 @@ const index: React.FC<indexProps> = ({ }) => {
               animate={{ x: 0, opacity: 1, transition: { ...transition } }}
               className="preloader__left"
             >
-              <img className="preloader__img" src="svg/logo-left.svg" alt="devxnex logo" />
+              <img className="preloader__img" src="svg/logo.png" alt="devxnex logo" />
             </motion.div>
             <motion.div
               initial={{ x: 10, opacity: 0 }}
@@ -760,7 +760,7 @@ const index: React.FC<indexProps> = ({ }) => {
         </main>
         <footer className="footer">
           <img
-            src="svg/logo.svg"
+            src="svg/logo.png"
             alt="DevXnex"
           />
           <div className="footer__socials">

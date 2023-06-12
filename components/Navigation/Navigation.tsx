@@ -42,16 +42,9 @@ export const Navigation = ({ isOpen, toggleOpen }: any) => {
           <a className="brand-logo">
             <img
               className="brand-logo__icon"
-              src="svg/logo.svg"
+              src="svg/logo.png"
               alt="DevXnex"
             />
-            <span className="brand-logo__text-wrapper">
-              <img
-                className="brand-logo__text"
-                src="svg/rdx.svg"
-                alt="DevxNex"
-              />
-            </span>
           </a>
         </Link>
         <MenuToggle toggle={toggleOpen} toggleState={isOpen} />

@@ -33,6 +33,10 @@
       justify-content: space-between;
       align-items: center;
       img {
+
+        max-width: 10rem;
+        height: inherit;
+        
         &:nth-child(2) {
           margin-left: 2rem;
         }
