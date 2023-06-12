@@ -144,7 +144,7 @@ const index: React.FC<indexProps> = ({ }) => {
       <div id="menu-target" data-scroll-container ref={refScroll}>
         <Head>
           <link rel="icon" href="svg/favicon.svg" />
-          {/* <link href="https://website.xyz/" rel="canonical" /> */}
+          <link href="https://devxnex.live/" rel="canonical" />
           <meta name="theme-color" content="#10101A" />
           <meta
             name="apple-mobile-web-app-status-bar-style"
@@ -160,8 +160,7 @@ const index: React.FC<indexProps> = ({ }) => {
             property="og:title"
             content="DevXnex"
           />
-          {/* TODO : ADD privew image and url */}
-          {/* <meta property="og:url" content="https://website.xyz/" /> */}
+          <meta property="og:url" content="https://devxnex.live/" />
           <meta property="og:image" content="webp/preview-image.png" />
           <meta
             property="og:description"
@@ -176,10 +175,9 @@ const index: React.FC<indexProps> = ({ }) => {
             content="Software development startup that turning ideas into real life products"
           />
 
-          {/* TODO : add previewer and URL here */}
           <meta name="twitter:image" content="webp/preview-image.png" />
           <meta name="twitter:card" content="summary_large_image" />
-          {/* <meta name="twitter:url" content="https://website.xyz/" /> */}
+          <meta name="twitter:url" content="https://devxnex.live/" />
         </Head>
         <audio loop id="audioPlayer" autoPlay style={{ display: "none" }}>
           <source src="sound/preloader.mp3" type="audio/mp3" />
