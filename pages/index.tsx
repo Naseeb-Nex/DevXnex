@@ -403,12 +403,17 @@ const index: React.FC<indexProps> = ({ }) => {
                   <img className='tokenImage' src="webp/mobileapp.webp" alt="mobile app" />
                   <h2 className="heading-2">Mobile App Development</h2>
                   <div className="description">Our team excels in mobile development, crafting feature-rich apps using cutting-edge tech. From native to cross-platform solutions, we deliver smooth user experiences with high performance and strong security. Boost your mobile presence with our expert development services.</div>
-                  <button className="swo-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span> Get a Free Consultation
-                  </button>
+                  <a
+                    data-scroll-to
+                    href="#section-contact"
+                  >
+                    <button className="swo-btn">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span> Get a Free Consultation
+                    </button>
+                  </a>
                 </div>
               </div>
               <div className="nft">
@@ -416,12 +421,17 @@ const index: React.FC<indexProps> = ({ }) => {
                   <img className='tokenImage' src="webp/website.webp" alt="mobile app" />
                   <h2 className="heading-2">Web<br />Development</h2>
                   <div className="description">Our expert team creates dynamic, responsive websites using cutting-edge technologies. From custom web applications to e-commerce platforms, we deliver seamless user experiences with optimized performance and robust security. Maximize your online presence with our professional web development services.</div>
-                  <button className="swo-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span> Launch Website
-                  </button>
+                  <a
+                    data-scroll-to
+                    href="#section-contact"
+                  >
+                    <button className="swo-btn">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span> Launch Website
+                    </button>
+                  </a>
                 </div>
               </div>
               <div className="nft">
@@ -429,12 +439,17 @@ const index: React.FC<indexProps> = ({ }) => {
                   <img className='tokenImage' src="webp/software.webp" alt="mobile app" />
                   <h2 className="heading-2">Software Development</h2>
                   <div className="description">Our skilled team engineers innovative software solutions utilizing state-of-the-art technologies. From bespoke applications to scalable enterprise systems, we provide flawless user experiences with high performance and stringent security. Elevate your digital capabilities with our expert software development services.</div>
-                  <button className="swo-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span> Get Started
-                  </button>
+                  <a
+                    data-scroll-to
+                    href="#section-contact"
+                  >
+                    <button className="swo-btn">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                      <span></span> Get Started
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
