@@ -161,11 +161,9 @@ const index: React.FC<indexProps> = ({ }) => {
             content="DevXnex"
           />
           <meta property="og:url" content="https://devxnex.live/" />
-          <meta property="og:image" content="webp/preview-image.png" />
-          <meta
-            property="og:description"
-            content="Software development startup that turning ideas into real life products"
-          />
+          <meta property="og:image" content="https://devxnex.live/webp/preview-image.png" />
+          <meta property="og:description" content="Software development startup that turns ideas into real life products" />
+          
           <meta
             name="twitter:title"
             content="DevXnex"
