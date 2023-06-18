@@ -15,9 +15,6 @@ interface Ireply {
   desc: string;
 }
 
-const locomotiveScroll =
-  typeof window !== `undefined` ? require("locomotive-scroll").default : null;
-
 const hoverEffect =
   typeof window !== `undefined` ? require("hover-effect").default : null;
 
@@ -42,28 +39,16 @@ const index: React.FC<indexProps> = ({ }) => {
   if (error) console.log(error);
 
   const refScroll = React.useRef(null);
-  let lscroll: any;
 
   React.useEffect(() => {
     ReactGa.initialize("UA-177100391-3");
     ReactGa.pageview(window.location.pathname + window.location.search);
-
-    if (!refScroll.current) return;
-    // @ts-ignore
-    lscroll = new locomotiveScroll({
-      el: refScroll.current,
-      smooth: true,
-      reloadOnContextChange: true,
-      multiplier: 0.75,
-      inertia: 0.5,
-    });
 
     // update locomotive scroll
     window.addEventListener("load", () => {
       let image = document.querySelector("img");
       // @ts-ignore
       const isLoaded = image!.complete && image!.naturalHeight !== 0;
-      lscroll.update();
     });
 
     // image hover effect
