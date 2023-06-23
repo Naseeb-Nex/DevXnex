@@ -478,7 +478,7 @@ const index: React.FC<indexProps> = ({ }) => {
                 <a
                   rel="noopener"
                   target="_blank"
-                  href="https://naseeb-nex.github.io/Ideal-Marketing-Webstie/"
+                  href="http://idealmarketingassociates.com/"
                   className="project-card__link"
                 >
                   VISIT THE WEBSITE
